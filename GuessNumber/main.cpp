@@ -14,8 +14,8 @@ random_device rd("/dev/random");
 
 int advise(int max,int min)
 {
-    int advp=(max+min)/2;
-    if(advp%1!=0)
+    double advp=(max+min)/2;
+    if((int)(2*advp)%2!=0)
     {
         advp+=(rd()%2==0?1:-1);
     }
