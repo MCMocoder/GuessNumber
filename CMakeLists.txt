@@ -1,0 +1,4 @@
+PROJECT(GuessNumber)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+ADD_DEFINITIONS(--std=c++11)
+ADD_EXECUTABLE(guess GuessNumber/GuessNumber.cpp)
